@@ -20,7 +20,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
+  # @im-20230502
+  host: localhost
+  user: postgres
+  password: quiquipg
 development:
   <<: *default
   database: rails_wallet_development
