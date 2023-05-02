@@ -89,7 +89,7 @@
 - [Live Demo Link](https://rails-wallet.onrender.com)
 
 ### Video documentation 📹
-- [Video documentation](https://www.loom.com/share/ac09caece5d4464)
+- [Video presentation by Ivan Martinez](https://www.loom.com/share/e11a91d739b04210986720f57e5ce740)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
