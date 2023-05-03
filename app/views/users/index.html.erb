@@ -1,1 +1,5 @@
 <h1>users - index.html.erb</h1>
+
+<% if current_user %>
+    <li><%= link_to 'Log out', destroy_user_session_path, method: :delete , data: { turbo: false }, class: "navigation-link log-out-link" %></li>
+<% end %>

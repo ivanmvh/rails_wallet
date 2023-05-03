@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.2.2'
+# @im ruby '3.2.2'
+ruby '~> 3.0'
 
 # Letter opener
 gem 'letter_opener', group: :development
@@ -85,10 +86,13 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rack_session_access'
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
 end
 
 gem 'dockerfile-rails', '>= 1.0', group: :development
