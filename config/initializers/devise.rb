@@ -8,13 +8,17 @@
 #
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
+Devise.sign_out_via = :delete
+
 Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '17808bce3869d87f307073e0386d64e473477de231e3561f129d5cf672eece86bdc3010b534d6fb0d07f8558ef12dcdc39ad50066eb8169bccd7c34a42570cc6'
+  # config.secret_key = '062072ed8a2c90b7864d50ed65e3f07b011c77eb6c850dde0114f5e7bb17126da0c366e61d06218211461eee85e073f6bbea7dc8c8648dc34e4502daf2347da6'
+
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -125,6 +129,8 @@ Devise.setup do |config|
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 12
 
+  config.reconfirmable = true
+
   # Set up a pepper to generate the hashed password.
   # config.pepper = '0bb8533430fdc398e89cec0823f0926db1b50aee47ad32aad47ac318c356d790a4e213d414f69671150a4dc676e633548ad5a32b031e02a00612d98865afa72a'
 
@@ -143,7 +149,7 @@ Devise.setup do |config|
   # without confirming their account.
   # Default is 0.days, meaning the user cannot access the website without
   # confirming their account.
-  # config.allow_unconfirmed_access_for = 2.days
+  config.allow_unconfirmed_access_for = 2.days
 
   # A period that the user is allowed to confirm their account before their
   # token becomes invalid. For example, if set to 3.days, the user can confirm
@@ -157,7 +163,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
-  config.reconfirmable = true
+
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [:email]
