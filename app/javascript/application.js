@@ -19,8 +19,6 @@ document.addEventListener('click', function(event) {
   }
 });
 
-
-
 // Trigger the hidden input[type="file"] when the separate "Choose file" button is clicked
 document.querySelector('.file-input-wrapper').addEventListener('click', function() {
   document.querySelector('#user_avatar').click();
