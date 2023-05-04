@@ -10,7 +10,7 @@ class GroupsController < ApplicationController
 
   def show
     @group = Group.find(params[:id])
-    @header = @group.name
+    @header = "Categorie: #{@group.name}"
   end
 
   def edit

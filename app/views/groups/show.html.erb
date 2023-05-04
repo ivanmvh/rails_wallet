@@ -1,5 +1,5 @@
 <main class="body-container">
-  <section class="container">
+  <section class="container align-items-center">
    <p><strong>Total transactions:</strong> $<%= @group.entities.sum(:amount) %></p> 
     <div class="group-info">
       <% if @group.icon.attached? %>

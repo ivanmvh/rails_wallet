@@ -3,7 +3,7 @@
     <%= form_with(model: [current_user, @group, @entity], local: true) do |form| %>
       <% if @entity.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+          <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this transacction from being saved:</h2>
 
           <ul>
             <% @entity.errors.full_messages.each do |message| %>

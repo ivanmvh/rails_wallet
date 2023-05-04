@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[BudgetWizard\] ](#-budgetwizard-)
+- [📖 \[Rails-Wallet\] ](#-rails-wallet-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [BudgetWizard] <a name="about-project"></a>
+# 📖 [Rails-Wallet] <a name="about-project"></a>
 
-**BudgetWizard** is a web application designed to help users manage their personal finances. Users can create a budget, track their expenses, and receive helpful insights into their spending habits. The application utilizes a simple and intuitive interface that allows users to easily view and manage their finances. The application is built using Ruby on rails on the server side, and a PostgreSQL database to store user information. BudgetWizard is designed to provide users with a reliable and easy-to-use tool to help them gain better control over their finances.
+**Rails-Wallet** is a web application designed to help users manage their personal finances. Users can create a budget, track their expenses, and receive helpful insights into their spending habits. The application utilizes a simple and intuitive interface that allows users to easily view and manage their finances. The application is built using Ruby on rails on the server side, and a PostgreSQL database to store user information. Rails-Wallet is designed to provide users with a reliable and easy-to-use tool to help them gain better control over their finances.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://budget-wizard.fly.dev/users/sign_in)
+- [Live Demo Link](https://rails_wallet.fly.dev/users/sign_in)
 
 ### Video documentation 📹
 - [Video documentation](https://www.loom.com/share/ac09caece5d4464)
@@ -97,7 +97,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/BudgetWizard.git
+  git clone git@github.com:myaccount/rails_wallet.git
 ```
 
 
@@ -198,6 +198,6 @@ I would like to thank:
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
