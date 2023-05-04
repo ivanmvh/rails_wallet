@@ -20,6 +20,7 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  
   # @im-20230502
   host: localhost
   user: postgres
@@ -85,6 +86,7 @@ test:
 #
 production:
   <<: *default
-  database: rails_wallet_production
-  username: rails_wallet
-  password: <%= ENV["RAILS_WALLET_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: rails_wallet_render_production
+  username: rails_wallet_render
+  password: <%= ENV["RAILS_WALLET_RENDER_DATABASE_PASSWORD"] %>
