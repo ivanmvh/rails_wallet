@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Budget Wizard</title>
+    <title>Rails-Wallet</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -21,7 +21,7 @@
 
   <body>
   <% unless current_page?(welcome_path) %>
-    <%= render partial: 'shared/header', locals: { header: @header || "Budget Wizard" } %>
+    <%= render partial: 'shared/header', locals: { header: @header || "Rails-Wallet" } %>
   <% end %>
     <% if notice %>
       <div class="alert-success">

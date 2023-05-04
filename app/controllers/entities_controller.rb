@@ -19,7 +19,7 @@ class EntitiesController < ApplicationController
     respond_to do |format|
       if @entity.save
         format.html do
-          redirect_to user_group_entities_path(current_user, @group), notice: 'Entity was successfully created.'
+          redirect_to user_group_entities_path(current_user, @group), notice: 'Transacction was successfully created.'
         end
         format.json { render :show, status: :created, location: @entity }
       else
@@ -33,7 +33,7 @@ class EntitiesController < ApplicationController
 
   def update
     if @entity.update(entity_params)
-      redirect_to user_group_entities_path(@entity.group), notice: 'Entity was successfully updated.'
+      redirect_to user_group_entities_path(@entity.group), notice: 'Transacction was successfully updated.'
     else
       render :edit
     end
@@ -41,7 +41,7 @@ class EntitiesController < ApplicationController
 
   def destroy
     @entity.destroy
-    redirect_to user_group_entities_path(@entity.group), notice: 'Entity was successfully destroyed.'
+    redirect_to user_group_entities_path(@entity.group), notice: 'Transacction was successfully destroyed.'
   end
 
   private
