@@ -10,12 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <%# Font awesome %>
+    <script src="https://kit.fontawesome.com/09255b1703.js" crossorigin="anonymous"></script>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+  <%= render partial: 'shared/header', locals: { header: @header || "Budget Wizard" } %>
     <% if notice %>
       <div class="alert-success">
         <%= notice %>
