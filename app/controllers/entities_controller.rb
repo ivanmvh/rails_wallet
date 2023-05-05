@@ -11,6 +11,7 @@ class EntitiesController < ApplicationController
 
   def new
     @entity = @group.entities.build
+    @groups = current_user.groups
   end
 
   def create

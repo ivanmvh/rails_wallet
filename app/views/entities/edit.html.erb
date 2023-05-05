@@ -22,6 +22,12 @@
         <%= form.label :amount %>
         <%= form.number_field :amount %>
       </div>
+      
+      <div class="field">
+        <%= form.label :category  %>
+        <%= check_box_tag 'Category', 'group.id', true, disabled: true %>
+        <%= form.label @group.name %>
+      </div>
 
       <div class="actions">
         <%= form.submit %>
