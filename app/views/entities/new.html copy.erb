@@ -1,7 +1,8 @@
 <main class="body-container">
   <section class="container">
     <%= form_for [current_user, @group, @entity] do |f| %>
- 
+      p "@entity"
+      p @entity
       <% if @entity.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this transacction from being saved:</h2>
@@ -23,7 +24,8 @@
         <%= f.number_field :amount, placeholder: 'Amount' %>
       </div>
 
-      <% if 1==0 %>
+      <%= f.hidden_field :author_id, value: current_user.id %>
+
       <div class="field">
         <% @groups.each do |group| %>
           <p>
@@ -32,15 +34,6 @@
           </p>
         <% end %>
       </div>
-      <% end %>
-      
-      <div class="field">
-        <%= f.label :category  %>
-        <%= check_box_tag 'Category', 'group.id', true, disabled: true %>
-        <%= f.label @group.name %>
-      </div>
-
-      <%= f.hidden_field :author_id, value: current_user.id %>
 
       <div class="actions">
         <%= f.submit %>
