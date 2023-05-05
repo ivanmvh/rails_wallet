@@ -87,6 +87,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  # database: rails_wallet_render_production
-  # username: rails_wallet_render
-  # password: <%= ENV["RAILS_WALLET_RENDER_DATABASE_PASSWORD"] %>
+  database: rails_wallet_render_production
+  username: rails_wallet_render
+  password: <%= ENV["RAILS_WALLET_RENDER_DATABASE_PASSWORD"] %>
