@@ -29,7 +29,8 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   # @im-20230504 - pipeline problem
-  config.assets.compile = true
+  # se va ha hacer entrar a la aplicacion remota (voy a chequear si es verdad)
+  config.assets.compile = false
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
