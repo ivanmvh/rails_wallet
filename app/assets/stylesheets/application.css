@@ -309,8 +309,10 @@ input::placeholder,
 .blue-btn {
   background-color: #285f9e;
   cursor: pointer;
-  width: 40%;
+  width: 250px;
   color: white;
+  margin:0;
+  text-align: center;
 }
 
 .actions input[type="submit"] {
@@ -486,13 +488,15 @@ input[type="submit"]:hover,
 
 .welcome-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .welcome-links button {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 350px;
+  margin: 0;
 }
 
 .white-btn {
@@ -502,8 +506,8 @@ input[type="submit"]:hover,
   cursor: pointer;
   padding: 10px 20px;
   height: 42px;
-  margin-bottom: 10px;
-  width: 150px;
+  margin-bottom: 0;
+  width: 250px;
 }
 
 .field #user_password,
