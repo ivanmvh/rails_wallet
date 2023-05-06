@@ -82,7 +82,7 @@ Activity list:
 
 - Make sure our app is tested adequately.
 - Deploy the project, and test for final details.
-  [Deploy link]()
+  [Deploy link](https://rails-wallet.onrender.com)
 - Record a video for our project.
   [Video link]()
 - Create a good README and PR description.

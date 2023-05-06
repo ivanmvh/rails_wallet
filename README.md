@@ -1,3 +1,12 @@
+
+# 📖 [Rails-Wallet]
+
+<a name="readme-top"></a>
+
+<div align="center">
+  <img src="./app/assets/images/virtual-wallet.png" alt="Rails-Wallet" width="100%"  height="auto" />
+</div>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -27,7 +36,7 @@
 
 # 📖 [Rails-Wallet] <a name="about-project"></a>
 
-**Rails-Wallet** is a web application designed to help users manage their personal finances. Users can create a budget, track their expenses, and receive helpful insights into their spending habits. The application utilizes a simple and intuitive interface that allows users to easily view and manage their finances. The application is built using Ruby on rails on the server side, and a PostgreSQL database to store user information. Rails-Wallet is designed to provide users with a reliable and easy-to-use tool to help them gain better control over their finances.
+**Rails-Wallet** is a Rails web application designed to help users manage their personal finances. Users can create a budget, track their expenses. The application utilizes a simple and intuitive interface that allows users to easily view and manage their finances. The application is built using Ruby on rails on the server side, and a PostgreSQL database to store user information. Rails-Wallet is designed to provide users with a reliable and easy-to-use tool to help them gain better control over their finances.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,11 +65,20 @@
 
 <!-- Features -->
 
+
 ### Key Features <a name="key-features"></a>
 
-- **User authentication and authorization**
-- **Category (group) creation**
-- **Transactions creation**
+- Splash screen
+
+- Sign up and log in pages
+
+- Home page (categories page)
+
+- Transactions list
+
+- Add a new category 
+
+- Add a new transaction
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +86,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://rails_wallet.fly.dev/users/sign_in)
+- [Live Demo Link](https://rails-wallet.onrender.com)
 
 ### Video documentation 📹
 - [Video documentation](https://www.loom.com/share/ac09caece5d4464)
@@ -97,7 +115,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/rails_wallet.git
+  git clone git@github.com:ivanmvh/rails_wallet.git
 ```
 
 
@@ -105,22 +123,18 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-
 ```sh
   cd my-project
   bundle install
 ```
 
-
 ### Usage
 
 To run the project, execute the following command:
 
-
 ```sh
   rails server
 ```
-
 
 ### Run tests
 
@@ -130,16 +144,11 @@ To run tests, run the following command:
   rspec
 ```
 
-
 ### Deployment
 
-You can deploy this project using (you need to register in Fly.io):
-
-
-```sh
-  fly launch
-  fly deploy
-```
+You can deploy this project using using services like:
+  - Render
+  - Fly.io
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
