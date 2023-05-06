@@ -190,7 +190,7 @@ li.transaction > p {
 }
 
 .align-items-center {
-  align-items: center; 
+  align-items: center;
 }
 
 .introduction {
@@ -224,10 +224,6 @@ li.transaction > p {
 
 .field label {
   width: 10%;
-}
-
-.field input {
-  border: 1px solid gray;
 }
 
 .field:nth-last-of-type(2) {
@@ -311,6 +307,14 @@ input::placeholder,
   justify-content: center;
 }
 
+
+input[type="submit"],
+.blue-btn {
+  background-color: #285f9e;
+  cursor: pointer;
+  width: 40%;
+}
+
 .actions input[type="submit"] {
   width: 90%;
 }
@@ -365,13 +369,6 @@ input::placeholder,
   height: 100%;
   cursor: pointer;
   opacity: 0;
-}
-
-input[type="submit"],
-.blue-btn {
-  background-color: #285f9e;
-  cursor: pointer;
-  width: 40%;
 }
 
 input[type="submit"]:hover,
