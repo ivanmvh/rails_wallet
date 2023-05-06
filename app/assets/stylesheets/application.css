@@ -310,6 +310,7 @@ input::placeholder,
   background-color: #285f9e;
   cursor: pointer;
   width: 40%;
+  color: white;
 }
 
 .actions input[type="submit"] {
@@ -372,6 +373,7 @@ input[type="submit"]:hover,
 .blue-btn:hover {
   background-color: #285f9e;
   cursor: pointer;
+  color: white;
 }
 
 .buttons {
@@ -384,6 +386,7 @@ input[type="submit"]:hover,
   align-items: center;
   background-color: #3778c2;
   width: 100vw;
+  color: w
 }
 
 .navigation-bar h1 {
@@ -613,18 +616,6 @@ tbody tr:nth-child(odd) {
     height: 70px;
     width: 70px;
   }
-
-  /*
-  .blue-btn,
-  .white-btn,
-  .green-btn,
-  input[type="submit"],
-  .delete-group {
-    width: auto;
-    border-radius: 10%;
-    text-align: center;
-  }
-  */
 
   .container,
   .registration {
