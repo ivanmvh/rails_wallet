@@ -19,6 +19,10 @@
   color: black;
 }
 
+body {
+  background-color: white;
+}
+
 .full-container {
   background-color: white;
   height: 100vh;
@@ -137,10 +141,17 @@ body {
   margin-top: 0;
 }
 
+.list-all-trans {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
 li.transaction {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  margin: 0;
+  margin-left: 35px;
 }
 
 li.transaction > p {
@@ -182,10 +193,12 @@ li.transaction > p {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   background-color: white;
   width: 100vw;
   margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
 }
 
 .introduction {
@@ -257,9 +270,10 @@ input[type="submit"],
   color: white !important;
   border-style: none;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 0;
   margin-bottom: 10px;
   text-decoration: none;
+  text-align: center;
 }
 
 .gray-btn:hover {
@@ -326,10 +340,6 @@ input::placeholder,
   background-color: #555;
 }
 
-.transaction {
-  text-align: end;
-}
-
 .file-input-wrapper span {
   margin-right: 0.5rem;
 }
@@ -352,7 +362,8 @@ input[type="submit"]:hover,
 }
 
 .buttons {
-  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .navigation-bar {
@@ -558,6 +569,18 @@ tbody tr:nth-child(odd) {
   display: none;
 }
 
+.al-it-left {
+  align-items: flex-start;
+}
+
+.al-it-right {
+  align-items: flex-end;
+}
+
+.al-it-center {
+  align-items: rigth;
+}
+
 @media only screen and (max-width: 700px) {
   .full-container h1 {
     font-family: 'Norican', cursive;
@@ -634,8 +657,36 @@ tbody tr:nth-child(odd) {
     padding: 10px 0;
   }
 
+  /*
   table {
     width: 90vw;
     font-size: 12px;
-  } 
+  }
+  */
+
+  .al-it-left {
+    align-items: left;
+  }
+  
+  .al-it-right {
+    align-items: rigth;
+  }
+  
+  .al-it-center {
+    align-items: rigth;
+  }
+  
+  table {
+    display: block; /* Change table layout to block-level */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  }
+
+  th, td {
+    display: block; /* Change table cell layout to block-level */
+    text-align: center;
+  }
+
+  th {
+    text-align: center; /* Align table headers to the left on small screens */
+  }  
 }
