@@ -669,7 +669,8 @@ tbody tr:nth-child(odd) {
     overflow-x: auto; /* Enable horizontal scrolling on small screens */
   }
 
-  th, td {
+  th,
+  td {
     display: block; /* Change table cell layout to block-level */
     text-align: center;
   }
