@@ -21,6 +21,7 @@
 
 body {
   background-color: white;
+  margin: 0;
 }
 
 .full-container {
@@ -70,10 +71,6 @@ ul {
 
 html {
   background-color: rgb(230, 230, 230);
-}
-
-body {
-  margin: 0;
 }
 
 .left-arrow {
@@ -193,7 +190,6 @@ li.transaction > p {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  /* border: 1px solid lightgray; */
   background-color: white;
   width: 100vw;
   margin-bottom: 20px;
@@ -508,7 +504,6 @@ input[type="submit"]:hover,
   background-color: white;
   padding-left: 10px;
   padding-right: 10px;
-  /* column-gap: 25%; */
 }
 
 #total-amount {
@@ -578,7 +573,7 @@ tbody tr:nth-child(odd) {
 }
 
 .al-it-center {
-  align-items: rigth;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 700px) {
@@ -657,23 +652,16 @@ tbody tr:nth-child(odd) {
     padding: 10px 0;
   }
 
-  /*
-  table {
-    width: 90vw;
-    font-size: 12px;
-  }
-  */
-
   .al-it-left {
-    align-items: left;
+    align-items: flex-start;
   }
   
   .al-it-right {
-    align-items: rigth;
+    align-items: flex-end;
   }
   
   .al-it-center {
-    align-items: rigth;
+    align-items: center;
   }
   
   table {
