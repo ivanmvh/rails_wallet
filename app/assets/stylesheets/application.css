@@ -655,7 +655,7 @@ tbody tr:nth-child(odd) {
   .al-it-left {
     align-items: flex-start;
   }
-  
+
   .al-it-right {
     align-items: flex-end;
   }
@@ -663,7 +663,7 @@ tbody tr:nth-child(odd) {
   .al-it-center {
     align-items: center;
   }
-  
+
   table {
     display: block; /* Change table layout to block-level */
     overflow-x: auto; /* Enable horizontal scrolling on small screens */
@@ -676,5 +676,5 @@ tbody tr:nth-child(odd) {
 
   th {
     text-align: center; /* Align table headers to the left on small screens */
-  }  
+  }
 }
