@@ -96,7 +96,6 @@ html {
   color: white;
 }
 
-
 .menu-btn.signed-in::before {
   content: "\f0c9"; /* Hamburger icon */
   font-family: "FontAwesome", sans-serif;
@@ -208,7 +207,7 @@ li.transaction > p {
   margin-top: 30px;
   background-color: white;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   margin-bottom: 20px;
   margin-left: 15px;
   margin-right: 5px;
@@ -237,8 +236,6 @@ li.transaction > p {
   display: flex;
   column-gap: 10px;
   align-items: center;
-  /* justify-content: flex-start; */
-  /* width: calc(max(50vw, 350px)); */
   width: 98vw;
   border-top: 1px solid lightgray;
 }
@@ -367,6 +364,16 @@ input::placeholder,
   height: 100%;
   cursor: pointer;
   opacity: 0;
+}
+
+.blue-btn,
+.white-btn,
+.green-btn,
+input[type="submit"],
+.delete-group {
+  width: 100vw;
+  border-radius: 0;
+  text-align: center;
 }
 
 input[type="submit"]:hover,
@@ -598,16 +605,6 @@ tbody tr:nth-child(odd) {
   align-items: flex-start;
 }
 
-.blue-btn,
-.white-btn,
-.green-btn,
-input[type="submit"],
-.delete-group {
-  width: 100vw;
-  border-radius: 0;
-  text-align: center;
-}
-
 @media only screen and (max-width: 700px) {
   .full-container h1 {
     font-family: 'Norican', cursive;
@@ -703,10 +700,10 @@ input[type="submit"],
     display: block;
     overflow-x: auto;
   }
-  
+
   th,
   td {
-    display: block; 
+    display: block;
     text-align: center;
   }
 
