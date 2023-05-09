@@ -25,6 +25,7 @@ body {
 }
 
 .full-container {
+  /*
   background-color: white;
   height: 100vh;
   width: 100vw;
@@ -34,6 +35,14 @@ body {
   justify-content: center;
   row-gap: 150px;
   animation: fade-in 2s ease-in forwards;
+  */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  margin: -8px;
+  justify-content: space-around;
 }
 
 @keyframes fade-in {
@@ -76,11 +85,17 @@ html {
 .left-arrow {
   font-size: 2em;
   margin-left: 10px;
+  color: white;
 }
 
 .left-arrow a {
   color: white;
 }
+
+.left-arrow i {
+  color: white;
+}
+
 
 .menu-btn.signed-in::before {
   content: "\f0c9"; /* Hamburger icon */
@@ -188,10 +203,12 @@ li.transaction > p {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-top: 30px;
   background-color: white;
   width: 100vw;
+  height: 100vh;
   margin-bottom: 20px;
   margin-left: 15px;
   margin-right: 5px;
@@ -220,8 +237,9 @@ li.transaction > p {
   display: flex;
   column-gap: 10px;
   align-items: center;
-  justify-content: flex-start;
-  width: calc(max(50vw, 350px));
+  /* justify-content: flex-start; */
+  /* width: calc(max(50vw, 350px)); */
+  width: 98vw;
   border-top: 1px solid lightgray;
 }
 
@@ -365,6 +383,7 @@ input[type="submit"]:hover,
 .navigation-bar {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
   align-items: center;
   background-color: #3778c2;
   width: 100vw;
@@ -415,7 +434,7 @@ input[type="submit"]:hover,
   visibility: visible;
   transition: opacity 0.2s ease-in-out, visibility 0s linear 0s;
   height: 60vh;
-  width: 100vh;
+  width: 100vw;
   background: linear-gradient(90deg, rgba(47, 132, 194, 1) 0%, rgba(20, 51, 96, 1) 42%);
 }
 
@@ -468,6 +487,7 @@ input[type="submit"]:hover,
 
 .welcome-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -484,7 +504,7 @@ input[type="submit"]:hover,
 
 .field #user_password,
 .field #user_password_confirmation {
-  width: 100%;
+  width: 98vw;
 }
 
 .groups-container {
@@ -520,9 +540,11 @@ input[type="submit"]:hover,
 }
 
 .edit-t {
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 4px 15px;
   font-size: 14px;
+  margin-bottom: 2px;
+  display: none;
 }
 
 /* Table styles */
@@ -576,6 +598,16 @@ tbody tr:nth-child(odd) {
   align-items: flex-start;
 }
 
+.blue-btn,
+.white-btn,
+.green-btn,
+input[type="submit"],
+.delete-group {
+  width: 100vw;
+  border-radius: 0;
+  text-align: center;
+}
+
 @media only screen and (max-width: 700px) {
   .full-container h1 {
     font-family: 'Norican', cursive;
@@ -619,12 +651,14 @@ tbody tr:nth-child(odd) {
     width: 100vw;
   }
 
+  /*
   form {
     width: 100vw;
   }
+  */
 
   .field {
-    width: 100vw;
+    width: 98vw;
   }
 
   .group-icon {
@@ -664,18 +698,20 @@ tbody tr:nth-child(odd) {
     align-items: center;
   }
 
+  /*
   table {
-    display: block; /* Change table layout to block-level */
-    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    display: block;
+    overflow-x: auto;
   }
-
+  
   th,
   td {
-    display: block; /* Change table cell layout to block-level */
+    display: block; 
     text-align: center;
   }
 
   th {
-    text-align: center; /* Align table headers to the left on small screens */
+    text-align: center;
   }
+  */
 }

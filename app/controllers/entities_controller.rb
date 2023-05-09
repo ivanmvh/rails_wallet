@@ -4,8 +4,8 @@ class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show edit update destroy]
 
   def index
-    @header = 'Entities'
     @group = Group.find(params[:group_id])
+    @header = 'Transactions'
     @entities = @group.entities.where(author: current_user).order(created_at: :desc)
   end
 

@@ -6,8 +6,6 @@
           <th>Name</th>
           <th>Group</th>
           <th>Amount</th>
-          <th>Edit</th>
-          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -18,8 +16,8 @@
             <td><%= entity.name %></td>
             <td><%= entity.group.name %></td>
             <td>$<%= entity.amount %></td>
-            <td><%= link_to 'Edit', edit_user_group_entity_path(current_user, entity.group, entity), class:"blue-btn edit-t" %></td>
-            <td><%= button_to 'Delete', user_group_entity_path(current_user, entity.group, entity), class: "delete-btn", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_user_group_entity_path(current_user, entity.group, entity), class:"blue-btn edit-t" %>
+          <%= button_to 'Delete', user_group_entity_path(current_user, entity.group, entity), class: "delete-btn edit-t", method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
             <tr>
@@ -32,7 +30,7 @@
 
     <br>
 
-    <%= link_to 'New Entity', new_user_group_entity_path, class: "green-btn" %>
+    <%= link_to 'New Transaction', new_user_group_entity_path, class: "green-btn" %>
 
   </section>
 </main>
