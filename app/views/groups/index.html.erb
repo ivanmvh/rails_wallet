@@ -7,7 +7,7 @@
 
   <section class="groups-container">
     <% @groups.each do |group| %>
-        <%= link_to user_group_path(current_user, group) do %>
+        <%= link_to user_group_entities_path(current_user, group) do %>
           <div class="group-card">
               <% if group.icon.attached? %>
                 <%= image_tag group.icon, class: "group-icon" %>
