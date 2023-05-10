@@ -10,6 +10,7 @@ class EntitiesController < ApplicationController
   end
 
   def new
+    @header = 'New Transaction'
     @entity = @group.entities.build
     @groups = current_user.groups
   end
