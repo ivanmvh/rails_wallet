@@ -20,7 +20,7 @@
 }
 
 .bg-green {
-  background: #155724;;
+  background: #5fb523;
 }
 
 .bg-blue {
@@ -38,7 +38,6 @@ body {
   height: 100vh;
   align-items: center;
   background-color: rgb(120, 25, 25);
-  margin: -8px;
   justify-content: space-between;
   margin: 1px;
 }
@@ -56,7 +55,7 @@ body {
 .full-container h1 {
   font-family: 'Norican', cursive;
   font-size: 50px;
-  margin-top: 30%
+  margin-top: 30%;
 }
 
 ul {
@@ -265,9 +264,8 @@ input[type="submit"],
   text-align: center;
 }
 
-
 input[type="submit"].green-btn {
-  background-color:  #5fb523;
+  background-color: #5fb523;
   color: white;
   width: 80%;
 }
@@ -618,7 +616,7 @@ tbody tr:nth-child(odd) {
 .green-rectangle {
   width: 100%;
   height: 100px;
-  background-color:  #5fb523;
+  background-color: #5fb523;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -678,12 +676,6 @@ tbody tr:nth-child(odd) {
     width: 100vw;
   }
 
-  /*
-  form {
-    width: 100vw;
-  }
-  */
-
   .field {
     width: 98vw;
   }
@@ -724,21 +716,4 @@ tbody tr:nth-child(odd) {
   .al-it-center {
     align-items: center;
   }
-
-  /*
-  table {
-    display: block;
-    overflow-x: auto;
-  }
-
-  th,
-  td {
-    display: block;
-    text-align: center;
-  }
-
-  th {
-    text-align: center;
-  }
-  */
 }
