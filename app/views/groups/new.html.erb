@@ -1,6 +1,5 @@
 <% if @group.errors.any? %>
   <div id="error_explanation">
-
     <ul>
       <% @group.errors.full_messages.each do |msg| %>
         <li class="alert-danger"><%= msg %></li>
@@ -10,11 +9,9 @@
 <% end %>
 <main class="body-container">
   <%= form_with model: @group, url: user_groups_path, class: "container", local: true, html: {multipart: true} do |f| %>
-
     <div class="field">
       <%= f.text_field :name, placeholder: "Category name", class: 'form-control' %>
     </div>
-
     <div class="field">
       <%= f.file_field :icon, id: "user_avatar" %>
       <br>
@@ -26,16 +23,14 @@
         <% end %>
       </div>
     </div>
-
-
-    <div class="actions">
-      <%= f.submit class: 'btn btn-primary', data: { turbo: false } %>
+    <div class="green-rectangle">
+      <div class="white-outline">
+        <%= f.submit 'SAVE CATEGORIE' , class: 'green-btn' %>
+      </div>
     </div>
+    0
   <% end %>
-
-  <%= link_to 'Back', user_groups_path, class: 'gray-btn' %>
 </main>
-
 <script>
   const avatarInput = document.querySelector('#user_avatar');
   const previewContainer = document.querySelector('.avatar-preview-container');
