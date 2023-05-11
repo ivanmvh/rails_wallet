@@ -94,3 +94,5 @@ end
 gem 'dockerfile-rails', '>= 1.0', group: :development
 
 gem 'redis', '~> 5.0'
+
+gem 'htmlbeautifier'
