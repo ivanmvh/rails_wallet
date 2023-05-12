@@ -17,7 +17,6 @@ class EntitiesController < ApplicationController
 
   def create
     @entity = @group.entities.build(entity_params)
-
     respond_to do |format|
       if @entity.save
         format.html do

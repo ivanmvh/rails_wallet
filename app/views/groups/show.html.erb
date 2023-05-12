@@ -8,12 +8,8 @@
       <% end %>
       <h3><%= @group.name %></h3>
     </div>
-
     <p><strong>Created at:</strong> <%= @group.created_at.strftime('%B %d, %Y at %I:%M %p') %> UTC</p>
-
-
     <p><strong>Transactions:</strong></p>
-
     <ul class="list-all-trans">
       <% if @group.entities.empty? %>
         <p>No transactions record</p>
@@ -25,10 +21,8 @@
         </li>
       <% end %>
     </ul>
-    <p><strong>Total transactions:</strong> $<%= @group.entities.sum(:amount) %></p> 
+    <p><strong>Total transactions:</strong> $<%= @group.entities.sum(:amount) %></p>
     <%= link_to 'Add a transaction', new_user_group_entity_path(current_user, @group), class: "green-btn" %>
-
-
     <div class="buttons">
       <%= link_to 'Edit', edit_user_group_path(@group), class: 'blue-btn' %>
       <%= link_to 'Back', user_groups_path, class: 'gray-btn' %>
@@ -36,7 +30,6 @@
     <%= link_to "See all transactions", user_group_entities_path(current_user, @group), class: "all-transactions" %>
     <div class="delete-container">
       <%= button_to "Delete category", user_group_path(@group.id), method: :delete, data: { confirm: "Are you sure?" }, class:"delete-group" %>
-    <div>
-
-  </section>
-</main>
+      <div>
+      </section>
+    </main>

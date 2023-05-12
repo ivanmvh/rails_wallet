@@ -27,6 +27,13 @@
   background-color: #0c5460;
 }
 
+.jus-l {
+  text-align: left;
+}
+´.jus-con-fs {
+  justify-content: flex-start;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -121,7 +128,7 @@ html {
 
 .search-icon i {
   font-size: 1.5em;
-  margin-right: 10px;
+  margin-right: 20px;
   color: white;
 }
 
@@ -211,13 +218,15 @@ li.transaction > p {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-top: 1px;
   background-color: white;
   width: 100vw;
   height: 85vh;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .introduction {
@@ -427,6 +436,7 @@ input[type="submit"]:hover,
   z-index: 1;
   margin-left: 20px;
   align-items: center;
+  column-gap: 40px;
 }
 
 .menu-btn span:first-child {
