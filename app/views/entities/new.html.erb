@@ -18,7 +18,7 @@
         <div class="field">
           <%= f.number_field :amount, placeholder: 'Amount' %>
         </div>
-        <div class="field">
+        <div class="field fx-wrap">
           <% @groups.each do |group| %>
             <p>
               <%= f.check_box :group_id, { multiple: true, checked: false, hidden: false }, group.id, nil %>

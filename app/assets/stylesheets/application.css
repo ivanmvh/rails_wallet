@@ -30,13 +30,18 @@
 .jus-l {
   text-align: left;
 }
-´.jus-con-fs {
+
+.jus-con-fs {
   justify-content: flex-start;
 }
 
 body {
   background-color: white;
   margin: 0;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
 }
 
 .fixed-bottom {
@@ -568,6 +573,7 @@ input[type="submit"]:hover,
   color: black;
   justify-content: space-around;
   column-gap: 60px;
+  margin-top:20px;
 }
 
 .edit-t {
