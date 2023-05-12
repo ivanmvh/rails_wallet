@@ -223,7 +223,6 @@ li.transaction > p {
 .container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   margin-top: 1px;
   background-color: white;
@@ -573,7 +572,7 @@ input[type="submit"]:hover,
   color: black;
   justify-content: space-around;
   column-gap: 60px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .edit-t {
@@ -638,8 +637,8 @@ tbody tr:nth-child(odd) {
 .fo-ent {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
-  row-gap:30px;
+  justify-content: flex-start;
+  row-gap: 30px;
   height: 100%;
 }
 
