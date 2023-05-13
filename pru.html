@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+         border: solid 1px rgb(76, 0, 255);
+      }
+
+      * :hover {
+        background-color: rgb(178, 211, 33);
+      }
+
+      div {
+        border: solid 1px red;
+      }
+
+      .container {
+        border: solid 1px rgb(184, 19, 87);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        background-color: rgb(233, 239, 239);
+        margin: 0px;
+        margin-top: 0;
+        justify-content: space-between;
+        text-align: center;
+      }
+
+      #tit-cont {
+        width: 100vw;
+      }
+
+      #header {
+        width: 100vw;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      #menu > li {
+        text-decoration: underline;
+        text-decoration-style: solid;
+        list-style: none;
+        border: none;
+      }
+
+      #botones {
+        width: 100vw;
+        border: solid 1px rgb(184, 19, 87);
+        background-color: rgb(188, 116, 176);
+        margin-bottom: 1px;
+        text-align: center;
+      }
+
+      #tit-log {
+        width: 100px;
+        text-align: left;
+      }
+
+      #tit {
+        height: 40px;
+      }
+
+      #logo {
+        height: 60px;
+        text-align: right;
+      }
+
+      #tit:hover {
+        background-color: rgb(172, 120, 21);
+      }
+
+      #bot1 {
+        background-color: rgb(164, 177, 222);
+      }
+
+      #bot2 {
+        background-color: rgb(233, 225, 228);
+      }
+      
+      .but:hover {
+        background-color: rgb(54, 65, 3);
+      }
+  </style>
+  </head>
+  <body>
+    <section class="container">
+      <section id="header">
+        <div>header container</div>
+        <navbar id="navbar">
+          <ul id="menu">
+            <li class="opcion">opcion 1</li>
+            <li class="opcion">opcion 2</li>
+            <li class="opcion">opcion 3</li>
+            <li class="opcion">opcion 4</li>
+          </ul> 
+        </navbar>
+      </section>
+      <div id="tit-log">
+        <div id="tit" class="flex">tit</div>
+        <div id="logo" class="flex">logo</div>
+      </div>
+      <div id="botones" class="flex">
+        <p>botones</p>
+        <div id="bot1" class="but">bot1</div>
+        <div id="bot2" class="but">bot2</div>
+      </div>
+    </section>
+  </body>
+</html>
